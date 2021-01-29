@@ -342,7 +342,7 @@
               <h2 class="text-3xl font-extrabold text-indigo-600 mt-10">Calcul honoraires</h2>
 
               <!-- we take the salary here -->
-              <div class="mt-8 w-2/3 flex flex-col m-auto text-center">
+              <div class="mt-12 w-2/3 flex flex-col m-auto text-center">
                 <p class="font-bold">Quelle sera la rémunération brut annuelle du candidat ?</p>
                 <input data-proposal-target="salary" data-action="input->proposal#change" class="mt-2" type="range" min="30000" max="120000" step="1000">
                 <div class="w-44 mx-auto mt-4">
@@ -363,37 +363,34 @@
               </div>
 
               <!-- we take on how many month -->
-              <div class="mt-8 w-2/3 mx-auto">
-                <p class="font-bold">Quelle sera la rémunération brut annuelle du candidat ?</p>
-                <div class="mt-8   flex justify-between">
-
+              <div class="mt-12 w-2/3 mx-auto">
+                <p class="font-bold">Sur quelle période souhaitez vous garantir le candidat et mensualiser ?</p>
+                <div class="mt-4   flex justify-between">
                   <div>
-                    <input type="radio" class="radio-input" id="first" name="drone" value="12"
-                           checked>
-                    <label class="inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="first">12 mois</label>
+                    <input type="radio" class="radio-input" id="first" name="drone" value="12" checked>
+                    <label data-action="click->proposal#choice" data-month="12" class="inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="first">12 mois</label>
                   </div>
 
                   <div>
                     <input type="radio" class="radio-input" id="second" name="drone" value="24">
-                    <label class="inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="second">24 mois</label>
+                    <label data-action="click->proposal#choice" data-month="24" class="inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="second">24 mois</label>
                   </div>
+
                   <div>
                     <input type="radio" class="radio-input" id="third" name="drone" value="36">
-                    <label class="inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="third">36 mois</label>
+                    <label data-action="click->proposal#choice" data-month="36" class="inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="third">36 mois</label>
                   </div>
                 </div>
               </div>
 
+              <div>
 
+              </div>
 
             </div>
           </div>
         </div>
       </div>
-
-
-
-
 
     </main>
   </div>

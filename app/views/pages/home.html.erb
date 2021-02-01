@@ -254,26 +254,26 @@
             <div>
               <input type="radio" class="radio-input text-black" id="first" name="drone" value="12" checked>
               <label data-action="click->proposal#change" data-month="12"
-                class="font-bold text-gray-800 inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="first">12 mois</label>
+                class="font-bold text-gray-800 inline-flex items-center px-4 py-2 md:px-8 md:py-3 shadow-sm text-sm leading-4 rounded-md bg-white hover:bg-gray-50 focus:outline-none" for="first">12 mois</label>
             </div>
 
             <div>
               <input type="radio" class="radio-input" id="second" name="drone" value="24">
               <label data-action="click->proposal#change" data-month="24"
-                class="font-bold text-gray-800 inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="second">24 mois</label>
+                class="font-bold text-gray-800 inline-flex items-center px-4 py-2 md:px-8 md:py-3 shadow-sm text-sm leading-4 rounded-md bg-white hover:bg-gray-50 focus:outline-none" for="second">24 mois</label>
             </div>
 
             <div>
               <input type="radio" class="radio-input" id="third" name="drone" value="36">
               <label data-action="click->proposal#change" data-month="36"
-                class="font-bold text-gray-800 inline-flex items-center px-4 py-2 md:px-8 md:py-3 border border-gray-300 shadow-sm text-sm leading-4 rounded-md bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" for="third">36 mois</label>
+                class="font-bold text-gray-800 inline-flex items-center px-4 py-2 md:px-8 md:py-3 shadow-sm text-sm leading-4 rounded-md bg-white hover:bg-gray-50 focus:outline-none" for="third">36 mois</label>
             </div>
           </div>
         </div>
 
         <div class="mt-12">
-          <p class="font-bold text-xl">Nos honoraires seront de: <br>
-              <span data-proposal-target="price">675</span> € / mois pendant <span data-proposal-target="nbmonth">12</span> mois </p>
+          <p class="font-base text-xl">Nos honoraires seront de:</p>
+          <p class="font-bold text-3xl text-green-300"><span data-proposal-target="price">675</span> € HT / mois pendant <span data-proposal-target="nbmonth">12</span> mois </p>
         </div>
 
         <div class="mt-8 w-10/12 sm:max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
@@ -301,7 +301,7 @@
                 <div class="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
                   <!-- Image -->
                   <div class="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                    <%= image_tag("eloise_pividori.jpg", class: "object-cover shadow-lg rounded-lg", alt:"eloise pividori ceo kp-skills") %>
+                    <%= image_tag("eloise_pividori.jpg", class: "object-cover lg:h-full lg:w-full shadow-lg rounded-lg", alt:"eloise pividori ceo kp-skills") %>
                   </div>
                   <div class="sm:col-span-2">
                     <div class="space-y-4">

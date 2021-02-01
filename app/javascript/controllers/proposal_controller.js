@@ -3,9 +3,6 @@ import { Controller } from "stimulus"
 export default class extends Controller {
   static targets = [ "salary",'salaryField', "price", "nbmonth" ]
 
-  connect() {
-    console.log("hello")
-  }
 
   change() {
     if (event.target.dataset.month == undefined) {
@@ -25,8 +22,4 @@ export default class extends Controller {
     }
   }
 
-  choice() {
-    let month = event.target.dataset.month
-    change(month)
-  }
 }

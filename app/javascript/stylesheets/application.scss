@@ -2,13 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   pointer-events: all;
   width: 24px;
   height: 24px;
   -webkit-appearance: none;
 
-/* @apply w-6 h-6 appearance-none pointer-events-auto; */
+  /* @apply w-6 h-6 appearance-none pointer-events-auto; */
 }
 
 .radio-input {
@@ -22,6 +22,57 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .radio-input:checked + label {
-  background-color: #0175FF;
-  color:whit
+  background-color: #0175ff;
+  color: whit;
+}
+.btn {
+  @apply inline-flex text-sm font-semibold text-center px-4 py-0 rounded no-underline items-center justify-between;
+
+  height: 40px;
+  line-height: 40px;
+  transition: ease 0.3s background, ease 0.3s transform, ease 0.2s color;
+
+  &:hover,
+  &:focus {
+    @apply cursor-pointer;
+  }
+
+  &:disabled {
+    @apply bg-aquamarine-200 text-white cursor-not-allowed;
+  }
+}
+.btn-primary {
+  @apply bg-aquamarine-500 text-gray-800;
+
+  &:hover,
+  &:focus {
+    @apply bg-aquamarine-600 text-gray-900;
+  }
+
+  &.outline {
+    @apply bg-transparent border border-aquamarine-500 text-aquamarine-500 border-aquamarine-500 shadow-none;
+
+    &:hover,
+    &:focus {
+      @apply border-aquamarine-600 text-aquamarine-600 underline;
+    }
+  }
+}
+
+.btn-secondary {
+  @apply bg-indigo-500 text-gray-800;
+
+  &:hover,
+  &:focus {
+    @apply bg-indigo-600 text-gray-800;
+  }
+
+  &.outline {
+    @apply bg-transparent border bg-indigo-500 bg-indigo-500 shadow-none;
+
+    &:hover,
+    &:focus {
+      @apply bg-indigo-600 text-gray-800;
+    }
+  }
 }
